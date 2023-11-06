@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-inline: 5%; */
+}
+
+header > h1, header > nav {
+    margin-block: auto;
+}
+
+header > nav {
+    display: flex;
+    column-gap: 10px;
+}
+
+header > nav > a {
+    text-decoration-line: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+header > nav > a:hover {
+    background-color: orangered;
+}
+
+form {
+    margin-block: 10%;
+    width: 50%;
+    margin-inline: auto;
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-inline: 10%;
+}
+
+fieldset > legend {
+    margin-inline: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: dodgerblue;
+}
+
+.gender-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-number-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-number-container > input[type="number"] {
+    margin-top: 5px;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline-style: none;
+    background-image: url("../gambar.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: padding-box;
+    padding-left: 2rem;
+    /* outline-width: 0; */
+}
+
+.input-number-container > input[type="number"]:hover {
+    border: 2px solid black;
+}
+
+.button-container {
+    margin-inline: auto;
+}
+
+.button-container > button {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: mediumaquamarine;
+}
+
+.button-container > button[type="reset"]:hover {
+    background-color: red;
+    color: white;
+}
+
+.button-container > button[type="submit"]:hover {
+    background-color: green;
+    color: white;
+}
+
+.button-container > button:active {
+    transform: translateY(5px);
+}
